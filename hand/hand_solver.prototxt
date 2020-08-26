@@ -1,0 +1,18 @@
+net: "cpm_hand_train_finetune.prototxt"
+# The base learning rate, momentum and the weight decay of the network.
+base_lr: 0.0000010
+momentum: 0.9
+weight_decay: 0.00005
+# The learning rate policy
+lr_policy: "step"
+gamma: 0.1
+stepsize: 40000
+# Display every 100 iterations
+display: 20
+# The maximum number of iterations
+max_iter: 200000
+# snapshot intermediate results
+snapshot: 10000
+snapshot_prefix: "./snapshots/cpm_hand"
+# solver mode: CPU or GPU
+solver_mode: GPU
